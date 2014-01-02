@@ -3,6 +3,8 @@ three-dee
 
 A soft 3D engine for the Pebble(R) smart watch using the SDK 2.0. Thanks to the babylon.js team for their inspiring babylon.math.js file which helped me a lot.
 
+Discussion: http://forums.getpebble.com/discussion/9788/release-3d-soft-engine-library-for-sdk2-0-three-dee-beta-git-src
+
 Usage
 -----
 
