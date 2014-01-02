@@ -17,7 +17,7 @@
  */
 
 #include <pebble.h>
-#include <pebble_three_dee.h>
+#include <three_dee.h>
 
 static Window *window;
 static Layer *layer;
