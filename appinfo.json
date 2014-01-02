@@ -1,0 +1,17 @@
+{
+  "uuid": "e77067b7-5b07-4088-8543-c1e3cfe3ed3a",
+  "shortName": "three_dee",
+  "longName": "three_dee",
+  "companyName": "Daniel Hug.",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": []
+  }
+}
