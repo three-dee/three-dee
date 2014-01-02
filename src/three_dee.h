@@ -94,7 +94,7 @@ inline float absf(const float i){
 //
 
 inline void draw_line(GContext* ctx, int x0, int y0, int x1, int y1){
-  // Bresenham
+  // Bresenham algorithm
   const int dx = abs(x1 - x0);
   const int dy = abs(y1 - y0);
   const int sx = (x0 < x1) ? 1 : -1;
@@ -103,12 +103,21 @@ inline void draw_line(GContext* ctx, int x0, int y0, int x1, int y1){
 
   int e2;
   while (1) {
-    graphics_draw_pixel(ctx, (GPoint) {x0,y0});
+    graphics_draw_pixel(ctx, (GPoint) {x0, y0});
 
     if ((x0 == x1) && (y0 == y1)) break;
     e2 = err << 1;
-    if (e2 > -dy) { err -= dy; x0 += sx; }
-    if (e2 < dx) { err += dx; y0 += sy; }
+    
+    if (e2 > -dy){
+      err -= dy;
+      x0 += sx;
+    }
+    
+    if (e2 < dx){
+      err += dx;
+      y0 += sy;
+    }
+    
   }
 }
 
